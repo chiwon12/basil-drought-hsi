@@ -1,0 +1,6 @@
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["load_utils", "vegetation_index"]
+default_section = "THIRDPARTY"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]

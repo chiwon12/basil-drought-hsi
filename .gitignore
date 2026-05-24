@@ -1,0 +1,31 @@
+# Large binary data -> Zenodo, not GitHub
+zenodo_data/
+*.npy
+*.h5
+*.hdf5
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backups
+*.bak
+*.bak_*
+*_legacy.*
