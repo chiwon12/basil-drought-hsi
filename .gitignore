@@ -1,0 +1,36 @@
+# Large raw/ML binaries -> Zenodo, not GitHub (envi, cubes, references)
+zenodo_data/
+*.h5
+*.hdf5
+*.zip
+
+# NOTE: small derived data ARE tracked in git on purpose and must NOT be ignored:
+#   data/cube_products/**/  (masks, previews, cluster labels/model — .npy/.png)
+#   data/wavelengths/*.npy
+#   data/augmentation/cache_*/*.npz   (the exact AE/GAN fold caches used in the paper)
+# Only the large raw/ML cubes (under zenodo_data/, ignored above) stay out of git.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backups
+*.bak
+*.bak_*
+*_legacy.*

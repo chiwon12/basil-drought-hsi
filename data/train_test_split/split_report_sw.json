@@ -1,0 +1,94 @@
+{
+  "seed": 42,
+  "n_folds": 5,
+  "n_features": 140,
+  "total_rows": 600,
+  "total_plants": 100,
+  "per_class": {
+    "DR": {
+      "train_plant": 16,
+      "test_plant": 4,
+      "train_img": 80,
+      "test_img": 20
+    },
+    "MD": {
+      "train_plant": 32,
+      "test_plant": 8,
+      "train_img": 160,
+      "test_img": 40
+    },
+    "SD": {
+      "train_plant": 16,
+      "test_plant": 4,
+      "train_img": 80,
+      "test_img": 20
+    },
+    "WW": {
+      "train_plant": 16,
+      "test_plant": 4,
+      "train_img": 160,
+      "test_img": 40
+    }
+  },
+  "train_img": 480,
+  "test_img": 120,
+  "plant_leakage": 0,
+  "fold_plant_leakage": false,
+  "folds": [
+    {
+      "fold": 0,
+      "plant": 16,
+      "img": 100,
+      "dist": {
+        "DR": 10,
+        "MD": 40,
+        "SD": 10,
+        "WW": 40
+      }
+    },
+    {
+      "fold": 1,
+      "plant": 16,
+      "img": 90,
+      "dist": {
+        "DR": 20,
+        "MD": 30,
+        "SD": 20,
+        "WW": 20
+      }
+    },
+    {
+      "fold": 2,
+      "plant": 16,
+      "img": 90,
+      "dist": {
+        "DR": 15,
+        "MD": 35,
+        "SD": 20,
+        "WW": 20
+      }
+    },
+    {
+      "fold": 3,
+      "plant": 16,
+      "img": 100,
+      "dist": {
+        "DR": 20,
+        "MD": 25,
+        "SD": 15,
+        "WW": 40
+      }
+    },
+    {
+      "fold": 4,
+      "plant": 16,
+      "img": 100,
+      "dist": {
+        "DR": 15,
+        "MD": 30,
+        "SD": 15,
+        "WW": 40
+      }
+    }
+  ]
+}
